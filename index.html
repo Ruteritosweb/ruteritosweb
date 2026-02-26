@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Ruteritos - Transformando la Movilidad Urbana</title>
+    <!-- Public Sans Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="  nav-container">
+            <a href="#" class="logo" onclick="navigateTo('home')">
+                <div class="text-primary">
+                    <img src="imagenes/logo.jpeg" alt="Logo" class="logo-img">
+              <h1 class="texto">RUTERITOS</h1>
+                    
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active" id="link-home" >Inicio</a>
+                <a href="problemas.html" class="nav-link" id="link-problemas" >Problemas</a>
+                <a href="campañas.html" class="nav-link" id="link-campanas" >Campañas</a>
+                <a href="resultados.html" class="nav-link" id="link-resultados">Resultados</a>
+            </nav>
+        </div>
+    </header>
+
+
+  <!-- HOME PAGE -->
+<main id="page-home" class="page active">
+    <section class="max-w-7xl hero">
+        <div class="hero-content">
+            <div class="badge">
+                <span class="line"></span>
+                Moverse mejor es vivir mejor
+            </div>
+            <h2>La Realidad de <br><span class="text-primary">El transporte </span></h2>
+            <p>Estamos transformando la gran problematica que es el transporte público buscando su mejora a través de la participación ciudadana. Juntos construimos un trayecto más seguro y eficiente para las personas.</p>
+            <div class="btn-group">
+                <button class="btn-primary" onclick="navigateTo('problemas')">
+                    Explorar Problemas
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+                <button class="btn-secondary" onclick="navigateTo('campanas')">
+                    Ver Campañas
+                </button>
+            </div>
+        </div>
+
+        <!-- CAROUSEL -->
+        <div class="hero-image-container">
+            <div class="carousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <img src="imagenes/trenmejora.jpeg" class="hero-img" alt="Transporte 1">
+
+                    <img src="imagenes/gentefila.jpeg" class="hero-img" alt="Transporte 2">
+
+                    <img src="imagenes/parada.jpeg" class="hero-img" alt="Transporte 3">
+                </div>
+                <!-- BOTONES -->
+                <button class="carousel-btn prev" onclick="prevSlide()">‹</button>
+                <button class="carousel-btn next" onclick="nextSlide()">›</button>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+
+        <section class="pillars">
+            <div class="max-w-7xl">
+                <div class="section-header">
+                    <h2>Nuestro Enfoque</h2>
+                    <p style="color: rgb(255, 255, 255);">Secciones de informacion</p>
+                </div>
+                <div class="grid-3">
+                   <a href="problemas.html"><div class="pillar-card red"style="cursor: pointer;">
+                        <span class="material-symbols-outlined" style="color: #fd5858;">warning</span>
+                        <h3>Problemas</h3>
+                        <p style="color: rgb(230, 229, 229);">informacion de la problematica</p>
+                    </div></a>
+                    <a href="campañas.html"><div class="pillar-card amber" style="cursor: pointer;">
+                        <span class="material-symbols-outlined" style="color: #f59e0b; font-size: 3rem;">campaign</span>
+                        <h3>Campañas</h3>
+                        <p style="color: rgb(209, 209, 209);">Acción ciudadana y aportaciones en campañas</p>
+                    </div></a>
+                    <a href="resultados.html"><div class="pillar-card green" style="cursor: pointer;">
+                        <span class="material-symbols-outlined" style="color: rgb(28, 255, 46);">task_alt</span>
+                        <h3>Resultados</h3>
+                        <p style="color: #dadada;">Mostramos el impacto y los cambios que se han logrado</p>
+                    </div></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+
+    <footer>
+        <div class="max-w-7xl">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo" style="margin-bottom: 1.5rem;">
+                        <h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin: 0; font-size: 1.5rem; font-weight: 900;">RUTERITOS</h2>
+                    </div>
+                    <p style="color: #bfdbfe; max-width: 300px; font-size: 1.1rem;">Plataforma dedicada a la mejora del transporte público mediante la acción colectiva.</p>
+                    <div class="social-links">
+                       
+                        <a href="https://www.instagram.com/ruteritosig?igsh=MWpob2tiZ2xncTkzeA==" class="social-icon">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@ruteritos_mty?_r=1&_t=ZS-93tUUABJ2qQ" class="social-icon">
+    <i class="fa-brands fa-tiktok"></i>
+</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="problemas.html" >Problemas</a></li>
+                        <li><a href="campañas.html" >Campañas</a></li>
+                        <li><a href="resultados.html">Resultados</a></li>
+                    </ul>
+                </div>
+                
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding-top: 2rem; font-size: 0.8rem; color: #60a5fa;">
+                <p>© 2026 Ruteritos. Todos los derechos reservados.</p>
+                <p>Hacia un transporte público digno.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function navigateTo(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(p => p.classList.remove('active'));
+
+            // Show current page
+            const targetPage = document.getElementById('page-' + pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            }
+
+            // Update nav link active state
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(l => l.classList.remove('active'));
+            const activeLink = document.getElementById('link-' + pageId);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Add some basic scroll animation effect for the header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = 'rgba(15, 23, 42, 0.98)';
+                header.style.padding = '5px 0';
+            } else {
+                header.style.backgroundColor = 'rgba(15, 23, 42, 0.95)';
+                header.style.padding = '0';
+            }
+        });
+    </script>
+</body>
+<script src="javascript.js"></script>
+</html>

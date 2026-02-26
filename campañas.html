@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruteritos | Participar Ahora</title>
+
+    <!-- Public Sans Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+   <div class="  nav-container">
+            <a href="#" class="logo" onclick="navigateTo('home')">
+                <div class="text-primary">
+                    <img src="imagenes/logo.jpeg" alt="Logo" class="logo-img">
+              <h1 class="texto">RUTERITOS</h1>
+                    
+                </div>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="problemas.html" class="nav-link">Problemas</a>
+            <a href="campañas.html" class="nav-link active">Participar</a>
+            <a href="resultados.html" class="nav-link">Resultados</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="max-w-6xl" style="padding-top: 10rem;">
+
+        <!-- HERO -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem; flex-wrap: wrap; gap: 2rem;">
+            <div>
+                <span style="background: #f59e0b; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 900;">
+                    PARTICIPACIÓN CIUDADANA
+                </span>
+                <h2 style="margin-top: 1rem; font-size: 4rem; font-weight: 900;">
+                    ¡Únete al <span style="color: #f59e0b;">Cambio</span>!
+                </h2>
+                <p style="max-width: 600px;">
+                    Tu participación es clave para transformar la movilidad urbana.
+                    Elige un evento y reserva tu lugar.
+                </p>
+            </div>
+        </div>
+
+        <!-- EVENTOS -->
+        <div class="grid-3" style="margin-bottom: 4rem;">
+
+            <!-- Evento 1 -->
+            <div class="pillar-card amber">
+                <div style="width: 50px; height: 50px; background: #f59e0b; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                    <span class="material-symbols-outlined">groups</span>
+                </div>
+                <h3>Reunión de Vecinos</h3>
+                <p style="color: white; margin-bottom: 1.5rem;">
+                    Encuentro comunitario para dialogar sobre movilidad y transporte en el Distrito Norte.
+                    <br><strong>12 de Octubre · 18:00</strong>
+                </p>
+                <button
+  onclick="reservarLugar(this)"
+  style="width: 100%; padding: 1rem; border-radius: 12px; background: rgba(245, 158, 11, 0.2); color: #f59e0b; font-weight: 700;">
+    Reservar Lugar
+</button>
+
+            </div>
+
+            <!-- Evento 2 -->
+            <div class="pillar-card amber">
+                <div style="width: 50px; height: 50px; background: #f59e0b; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                    <span class="material-symbols-outlined">school</span>
+                </div>
+                <h3>Taller de Seguridad Vial</h3>
+                <p style="color:white; margin-bottom: 1.5rem;">
+                    Capacitación abierta sobre normas de tránsito y uso seguro de la vía pública.
+                    <br><strong>15 de Octubre · 10:00</strong>
+                </p>
+                <button
+  onclick="reservarLugar(this)"
+  style="width: 100%; padding: 1rem; border-radius: 12px; background: rgba(245, 158, 11, 0.2); color: #f59e0b; font-weight: 700;">
+    Reservar Lugar
+</button>
+
+            </div>
+
+            <!-- Evento 3 -->
+            <div class="pillar-card amber">
+                <div style="width: 50px; height: 50px; background: #f59e0b; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                    <span class="material-symbols-outlined">handshake</span>
+                </div>
+                <h3>Mesa de Diálogo</h3>
+                <p style="color: white; margin-bottom: 1.5rem;">
+                    Conversación abierta con transportistas y autoridades locales.
+                    <br><strong>20 de Octubre · 16:00</strong>
+                </p>
+               <button
+  onclick="reservarLugar(this)"
+  style="width: 100%; padding: 1rem; border-radius: 12px; background: rgba(245, 158, 11, 0.2); color: #f59e0b; font-weight: 700;">
+    Reservar Lugar
+</button>
+
+            </div>
+
+        </div>
+
+        <!-- OTRAS FORMAS DE AYUDAR -->
+        <div style="background: #f59e0b; padding: 4rem; border-radius: 3rem; color: white; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+            <div>
+                <h3 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem;">
+                    Voluntariado Digital
+                </h3>
+                <p>
+                    Registrate y ayuda a mejorar la comunidad, ayudanos a hacer un cambio!
+                </p>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.1); padding: 2.5rem; border-radius: 2rem; backdrop-filter: blur(10px);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                    <span style="font-size: 3rem; font-weight: 900;">Participacion abierta</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 100%;"></div>
+                </div>
+                <button
+  onclick="window.location.href='voluntariado.html'"
+  style="width: 100%; padding: 1rem; margin-top: 1.5rem; border-radius: 1rem; background: white; color: #f59e0b; font-weight: 900;">
+    Unirme
+</button>
+
+            </div>
+        </div>
+
+    </section>
+</main>
+<footer>
+        <div class="max-w-7xl">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo" style="margin-bottom: 1.5rem;">
+                        <h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin: 0; font-size: 1.5rem; font-weight: 900;">RUTERITOS</h2>
+                    </div>
+                    <p style="color: #bfdbfe; max-width: 300px; font-size: 1.1rem;">Plataforma dedicada a la mejora del transporte público mediante la acción colectiva.</p>
+                    <div class="social-links">
+                       
+                        <a href="https://www.instagram.com/ruteritosig?igsh=MWpob2tiZ2xncTkzeA==" class="social-icon">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@ruteritos_mty?_r=1&_t=ZS-93tUUABJ2qQ" class="social-icon">
+    <i class="fa-brands fa-tiktok"></i>
+</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="problemas.html" >Problemas</a></li>
+                        <li><a href="campañas.html" >Campañas</a></li>
+                        <li><a href="resultados.html">Resultados</a></li>
+                    </ul>
+                </div>
+        
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding-top: 2rem; font-size: 0.8rem; color: #60a5fa;">
+                <p>© 2026 Ruteritos. Todos los derechos reservados.</p>
+                <p>Hacia un transporte público digno.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+function reservarLugar(boton) {
+    // Si ya está reservado, no hacer nada
+    if (boton.dataset.reservado === "true") return;
+
+    // Cambiar estado
+    boton.dataset.reservado = "true";
+    boton.innerText = "Lugar Reservado";
+
+    // Cambiar estilos (sin tocar CSS)
+    boton.style.background = "#22c55e"; // verde
+    boton.style.color = "white";
+    boton.style.cursor = "default";
+
+    // Mostrar mensaje
+    alert("✅ Tu lugar ha sido reservado con éxito");
+}
+</script>
+
+</html>

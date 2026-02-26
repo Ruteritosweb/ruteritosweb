@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Public Sans Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+        <div class="  nav-container">
+            <a href="#" class="logo" onclick="navigateTo('home')">
+                <div class="text-primary">
+                    <img src="imagenes/logo.jpeg" alt="Logo" class="logo-img">
+              <h1 class="texto">RUTERITOS</h1>
+                    
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active" id="link-home">Inicio</a>
+                <a href="problemas.html" class="nav-link" id="link-problemas">Problemas</a>
+                <a href="campañas.html" class="nav-link" id="link-campanas">Campañas</a>
+                <a href="resultados.html" class="nav-link" id="link-resultados">Resultados</a>
+            </nav>
+        </div>
+    </header>
+   <!-- RESULTADOS PAGE -->
+    <main>
+        <section class="max-w-6xl" style="padding-top: 10rem;">
+            <div class="hero">
+                <div>
+                    <span style="background: var(--brand-green); color: var(--brand-blue); padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 900;">PROGRESO REAL</span>
+                    <h2 style="margin-top: 1rem;">Cambio Real: <span style="color: var(--brand-green);">Impacto</span></h2>
+                    <p>Celebramos los logros alcanzados gracias a la presión ciudadana. Hemos logrado transformar quejas en soluciones tangibles.</p>
+                    
+                        </div>
+                      <p style="font-size: 0.7rem; font-weight: 700; color: var(--brand-green); text-transform: uppercase;">
+  <div style="display: flex; align-items: center; gap: 2rem; margin-top: 3rem;">
+  
+  <!-- Tarjeta de Voluntariados Registrados -->
+  <div style="
+      background: #22c55e; /* verde */
+      padding: 2rem;
+      border-radius: 1.5rem;
+      min-width: 200px;
+      text-align: center;
+      color: white;
+      flex-shrink: 0;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  ">
+      <p style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Voluntariados Registrados</p>
+      <p id="volunteer-count" style="font-size: 3rem; font-weight: 900; margin: 0.5rem 0;">0</p>
+  </div>
+
+  <!-- Imagen del autobús -->
+ <img 
+  src="https://www.jornada.com.mx/ndjsimg/images/jornada/jornadaimg/hasta-una-hora-y-media-pierden-en-abordar-un-autobus-usuarios-de-la-rtp-en-cdmx/hasta-una-hora-y-media-pierden-en-abordar-un-autobus-usuarios-de-la-rtp-en-cdmx_a979866a-3c1e-4699-9e2b-ddf36d5edecd_medialjnimgndimage=fullsize"
+  style="
+    float: right;
+    border: 10px solid #22c55e;
+    width: 1000px;
+    max-width: 200%;
+    border-radius: 1rem;
+  "
+>
+
+</div>
+
+<script>
+// Función para actualizar el número de voluntarios desde localStorage
+function updateVolunteerCount() {
+    const count = localStorage.getItem("volunteerCount") || 0;
+    document.getElementById("volunteer-count").textContent = count;
+}
+
+// Ejecutar al cargar la página
+updateVolunteerCount();
+</script>
+
+            </div>
+
+            <div style="margin-top: 6rem;">
+                <h3 style="font-size: 2rem; font-weight: 900; margin-bottom: 2rem;">Campañas <span style="color: var(--brand-green);">Exitosas</span></h3>
+                <div class="grid-3">
+                    <div style="background: var(--slate-800); padding: 2rem; border-radius: var(--radius-2xl);">
+                        <div style="color: var(--brand-green); margin-bottom: 1rem;"><span class="material-symbols-outlined">verified</span></div>
+                        <h4 style="margin-bottom: 1rem;">Renovación Rutas</h4>
+                        <p style="font-size: 0.9rem; color: var(--slate-300); margin-bottom: 1rem;">Logramos que las rutas integraran 10 unidades nuevas a diferentes puntos clave de la ciudad, tras recolectar 15,000 firmas.</p>
+                        <span style="font-size: 0.8rem; background: rgba(30, 182, 228, 0.1); color: var(--brand-green); padding: 4px 8px; border-radius: 4px;">Completado Mar 2026</span>
+                    </div>
+                    <img src="https://img.freepik.com/foto-gratis/persona-primer-plano-firmando-certificado_23-2148769675.jpg?semt=ais_user_personalization&w=740&q=80"
+     style="width:100%; height:160px; object-fit:cover; border-radius:1rem; margin-bottom:1rem;">
+
+                    <div style="background: var(--slate-800); padding: 2rem; border-radius: var(--radius-2xl);">
+                        <div style="color: var(--brand-green); margin-bottom: 1rem;"><span class="material-symbols-outlined">verified</span></div>
+                        <h4 style="margin-bottom: 1rem;">Paradas Seguras</h4>
+                        <p style="font-size: 0.9rem; color: var(--slate-300); margin-bottom: 1rem;">Instalación de cámaras y botones de pánico en 25 paradas del centro, financiadas por donaciones y presupuesto municipal.</p>
+                        <span style="font-size: 0.8rem; background: rgba(9, 165, 255, 0.1); color: var(--brand-green); padding: 4px 8px; border-radius: 4px;">Completado Ene 2026</span>
+                    </div>
+                    <img src="https://www.shutterstock.com/shutterstock/videos/8570848/thumb/1.jpg?ip=x480"
+     style="width:100%; height:160px; object-fit:cover; border-radius:1rem; margin-bottom:1rem;">
+
+                    <div style="background: var(--slate-800); padding: 2rem; border-radius: var(--radius-2xl);">
+                        <div style="color: var(--brand-green); margin-bottom: 1rem;"><span class="material-symbols-outlined">format_quote</span></div>
+                        <h4 style="margin-bottom: 1rem;">Testimonio</h4>
+                        <p style="font-style: italic; font-size: 0.9rem; color: var(--slate-300);">"Antes esperaba 40 minutos para volver a casa. Gracias a la campaña de Ruteritos, el camión pasa cada 10. Mi calidad de vida cambió."</p>
+                        <p style="margin-top: 1rem; font-weight: 700; font-size: 0.8rem;">— María G., Usuaria </p>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ794bbxnA7lE8tVULubM_1JyjscvI26Lphcg&s"
+     style="width:100%; height:160px; object-fit:cover; border-radius:1rem; margin-bottom:1rem;">
+
+                </div>
+            </div>
+        </section>
+    </main>  
+    <footer>
+        <div class="max-w-7xl">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo" style="margin-bottom: 1.5rem;">
+                        <h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin: 0; font-size: 1.5rem; font-weight: 900;">RUTERITOS</h2>
+                    </div>
+                    <p style="color: #bfdbfe; max-width: 300px; font-size: 1.1rem;">Plataforma dedicada a la mejora del transporte público mediante la acción colectiva.</p>
+                    <div class="social-links">
+                       
+                        <a href="https://www.instagram.com/ruteritosig?igsh=MWpob2tiZ2xncTkzeA==" class="social-icon">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@ruteritos_mty?_r=1&_t=ZS-93tUUABJ2qQ" class="social-icon">
+    <i class="fa-brands fa-tiktok"></i>
+</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="problemas.html" >Problemas</a></li>
+                        <li><a href="campañas.html" >Campañas</a></li>
+                        <li><a href="resultados.html">Resultados</a></li>
+                    </ul>
+                </div>
+        
+            </div>
+            <div style="display: flex; justify-content: space-between; padding-top: 2rem; font-size: 0.8rem; color: #60a5fa;">
+                <p>© 2026 Ruteritos. Todos los derechos reservados.</p>
+                <p>Hacia un transporte público digno.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+// Función para actualizar el número de voluntarios desde localStorage
+function updateVolunteerCount() {
+    const count = localStorage.getItem("volunteerCount") || 0;
+    document.getElementById("volunteer-count").textContent = count;
+}
+
+// Ejecutar al cargar la página
+updateVolunteerCount();
+</script>
+
+</html>

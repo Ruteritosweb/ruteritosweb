@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Registro de Voluntariado | Ruteritos</title>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#ec5b13",
+        background: "#121212"
+      },
+      fontFamily: {
+        display: ["Public Sans", "sans-serif"]
+      }
+    }
+  }
+}
+</script>
+
+<style>
+body { font-family: "Public Sans", sans-serif; }
+.chip-active { background:#ec5b13; color:white; border-color:#ec5b13; }
+</style>
+</head>
+
+<body class="bg-background text-white min-h-screen">
+
+<!-- HEADER -->
+<header class="sticky top-0 bg-background/90 backdrop-blur border-b border-white/10 p-4 flex items-center gap-3">
+  <button onclick="history.back()" class="p-2 rounded-full hover:bg-white/10">
+    <span class="material-symbols-outlined">arrow_back</span>
+  </button>
+  <h2 class="font-bold text-lg">Conviértete en Ruterito</h2>
+</header>
+
+<!-- CONTENT -->
+<main class="p-6 max-w-xl mx-auto">
+
+<h1 class="text-3xl font-bold mb-2">Únete a la transformación</h1>
+<p class="text-white/60 mb-6">Ayúdanos a mejorar la movilidad urbana.</p>
+
+<form id="volunteerForm" class="space-y-6">
+
+<!-- Nombre -->
+<div>
+  <label class="text-sm text-white/80">Nombre completo</label>
+  <input required class="w-full mt-2 p-4 rounded-xl bg-white/5 border border-white/10" placeholder="Tu nombre"/>
+</div>
+
+<!-- Zona -->
+<div>
+  <label class="text-sm text-white/80">Zona de residencia</label>
+  <select required class="w-full mt-2 p-4 rounded-xl bg-white/5 border border-white/10">
+    <option value="">Selecciona tu zona</option>
+    <option>Norte</option>
+    <option>Sur</option>
+    <option>Este</option>
+    <option>Oeste</option>
+    <option>Centro</option>
+  </select>
+</div>
+
+<!-- Disponibilidad -->
+<div>
+  <label class="text-sm text-white/80">Disponibilidad</label>
+  <div class="flex gap-2 mt-2">
+    <button type="button" class="chip px-5 py-2 rounded-full border border-white/20">Mañana</button>
+    <button type="button" class="chip px-5 py-2 rounded-full border border-white/20">Tarde</button>
+    <button type="button" class="chip px-5 py-2 rounded-full border border-white/20">Noche</button>
+  </div>
+</div>
+
+<!-- Intereses -->
+<div>
+  <label class="text-sm text-white/80">Área de interés</label>
+  <div class="space-y-3 mt-2">
+    <label class="flex items-center gap-3 bg-white/5 p-4 rounded-xl">
+      <input type="checkbox" checked>
+      Recolección de datos
+    </label>
+    <label class="flex items-center gap-3 bg-white/5 p-4 rounded-xl">
+      <input type="checkbox">
+      Brigadas de limpieza
+    </label>
+    <label class="flex items-center gap-3 bg-white/5 p-4 rounded-xl">
+      <input type="checkbox">
+      Soporte legal
+    </label>
+  </div>
+</div>
+
+<button class="w-full bg-primary py-4 rounded-full font-bold flex justify-center gap-2">
+  Enviar Solicitud
+  <span class="material-symbols-outlined">send</span>
+</button>
+
+</form>
+</main>
+
+<script>
+// Chips toggle
+document.querySelectorAll(".chip").forEach(btn=>{
+  btn.onclick=()=>btn.classList.toggle("chip-active");
+});
+
+// Submit
+document.getElementById("volunteerForm").onsubmit = e => {
+  e.preventDefault();
+
+  // Incrementar conteo en localStorage
+  let count = parseInt(localStorage.getItem("volunteerCount") || "0");
+  count++;
+  localStorage.setItem("volunteerCount", count);
+
+  alert("✅ Registro enviado correctamente. ¡Gracias por ser parte de Ruteritos!");
+  
+  // Limpiar formulario
+  e.target.reset();
+
+  // Opcional: desactivar chips
+  document.querySelectorAll(".chip").forEach(btn=>btn.classList.remove("chip-active"));
+};
+
+</script>
+
+</body>
+</html>

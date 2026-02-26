@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- Public Sans Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+      <div class="  nav-container">
+            <a href="#" class="logo" onclick="navigateTo('home')">
+                <div class="text-primary">
+                    <img src="imagenes/logo.jpeg" alt="Logo" class="logo-img">
+              <h1 class="texto">RUTERITOS</h1>
+                    
+                </div>
+              
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active" id="link-home">Inicio</a>
+                <a href="problemas.html" class="nav-link" id="link-problemas">Problemas</a>
+                <a href="campañas.html" class="nav-link" id="link-campanas">Campañas</a>
+                <a href="resultados.html" class="nav-link" id="link-resultados">Resultados</a>
+            </nav>
+        </div>
+    </header>
+     <!-- PROBLEMAS PAGE -->
+     <main>
+        <section class="max-w-6xl" style="padding-top: 10rem;">
+            <div class="hero">
+                <div>
+                    <span style="background: #ef4444; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 900;">LA PROBLEMATICA</span>
+                    <h2 style="margin-top: 1rem;">Realidad de las <br><span style="color: #ef4444;">Calles</span></h2>
+                    <p> En el dia a dia de los ciudadanos son comunes en el transporte publico los retrasos extremos, horas de espera,recoridos largos y la inseguridad. El estado crítico del transporte público actual ineficiente, donde la falta de inversión y mantenimiento afecta a millones de prsonas que pierden hasta 4 horas diarias en traslados.</p>
+                    
+                    <div class="grid-3" style="margin-top: 2rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                        <div style="background: var(--slate-800); padding: 1.5rem; border-radius: var(--radius-xl); border-left: 4px solid #ef4444;">
+                            <span class="material-symbols-outlined" style="color: #ef4444;">group_off</span>
+                            <h4 style="margin: 0.5rem 0;">Desabastesimiento</h4>
+                            <p style="font-size: 0.8rem; color: #ffffff;">Las personas han señalando la falta de autobuses ,el número de rutas y  la cantidad de unidades de transporte no es suficiente.Contar con varias unidades y ofrecen una cobertura mayor es fundamental.</p>
+                        </div>
+                        <div style="background: var(--slate-800); padding: 1.5rem; border-radius: var(--radius-xl); border-left: 4px solid #ef4444;">
+                            <span class="material-symbols-outlined" style="color: #ef4444;">schedule</span>
+                            <h4 style="margin: 0.5rem 0;">Retrasos</h4>
+                            <p style="font-size: 0.8rem;color: #fffbfb;">Los tiempos de espera y traslados muy largos,son en promedio de 2 horas que se invierte en el traslado la mayoria de las personas, esto afectando consequentemente la calidad de vida y la productividad laboral.</p>
+                        </div>                       
+                        <div style="background: var(--slate-800); padding: 1.5rem; border-radius: var(--radius-xl); border-left: 4px solid #ef4444;">
+                            <span class="material-symbols-outlined" style="color: #ef4444;">security_update_warning</span>
+                            <h4 style="margin: 0.5rem 0;">Inseguridad</h4>
+                            <p style="font-size: 0.8rem;color: #ffffff;"> Muchos usuarios de transporte contaron que acostumbran a guardar objetos al subirse al transporte por casos de asaltos.la falta de iluminación y vigilancia en las paradas críticas, ha aumentando el riesgo de robos y acoso.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="position: relative;">
+                    <img src="https://coahuila.elsiglo.mx/i/2018/03/787002.jpeg" class="hero-img" ; border: 2px solid #ef4444;">
+                    <div style="position: absolute; bottom: -20px; right: -20px; background: var(--brand-blue); padding: 2rem; border-radius: 1rem; border: 4px solid #ef4444;">
+                        <p style="font-size: 2 rem; font-weight: 900; color: #ef4444; margin: 0;">PROBLEMATICAS</p>
+                        <p style="font-size: 1 rem; font-weight: 700; text-transform: uppercase;"> DEL TRANSPORTE</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 6rem;">
+                <h3 style="font-size: 2rem; font-weight: 900; margin-bottom: 2rem;">Evidencias de la <span style="color: #ef4444;">Deficiencia</span></h3>
+                <div class="grid-3">
+                    <div style="overflow: hidden; border-radius: var(--radius-2xl);">
+                        <img src="https://images.milenio.com/1pZtLSxIs4peEyzUmW51hTucC4A=/345x194/uploads/media/2019/11/01/transporte-publico-tampico-foto-pablo.jpg" alt="Buses viejos" style="width: 100%; height: 250px; object-fit: cover;">
+                        <p style="padding: 1rem; background: var(--slate-800); font-size: 0.9rem;">Unidades con más de 15 años de antigüedad aún en circulación.</p>
+                    </div>
+                    <div style="overflow: hidden; border-radius: var(--radius-2xl);">
+                        <img src="https://images.milenio.com/ZklQ9pgaYXzzcHlZtjLz5x9wruQ=/375x0/uploads/media/2024/12/17/manana-usuarios-esperan-transporte-publico.jpg" alt="Paradas llenas" style="width: 100%; height: 250px; object-fit: cover;">
+                        <p style="padding: 1rem; background: var(--slate-800); font-size: 0.9rem;">largas horas de espera para subir a transportes publicos</p>
+                    </div>
+                    <div style="overflow: hidden; border-radius: var(--radius-2xl);">
+                        <img src="https://www.nitro.pe/images/2018/abril/urb_dos.jpg" alt="Tráfico" style="width: 100%; height: 250px; object-fit: cover;">
+                        <p style="padding: 1rem; background: var(--slate-800); font-size: 0.9rem;">Falta de carriles que genera retrasos masivos y trafico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="max-w-7xl">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo" style="margin-bottom: 1.5rem;">
+                        <h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin: 0; font-size: 1.5rem; font-weight: 900;">RUTERITOS</h2>
+                    </div>
+                    <p style="color: #bfdbfe; max-width: 300px; font-size: 1.1rem;">Plataforma dedicada a la mejora del transporte público mediante la acción colectiva.</p>
+                    <div class="social-links">
+                       
+                        <a href="https://www.instagram.com/ruteritosig?igsh=MWpob2tiZ2xncTkzeA==" class="social-icon">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@ruteritos_mty?_r=1&_t=ZS-93tUUABJ2qQ" class="social-icon">
+    <i class="fa-brands fa-tiktok"></i>
+</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="problemas.html" >Problemas</a></li>
+                        <li><a href="campañas.html" >Campañas</a></li>
+                        <li><a href="resultados.html">Resultados</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div style="display: flex; justify-content: space-between; padding-top: 2rem; font-size: 0.8rem; color: #60a5fa;">
+                <p>© 2026 Ruteritos. Todos los derechos reservados.</p>
+                <p>Hacia un transporte público digno.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
